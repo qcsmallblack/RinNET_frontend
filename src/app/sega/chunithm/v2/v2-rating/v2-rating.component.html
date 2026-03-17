@@ -66,7 +66,7 @@
 <ng-container *ngIf="!loadingRating && newRating">
   <div class="mb-3 d-flex align-items-center">
     <h2 class="mb-0">{{ "ChuniV2.RatingPage.New" | translate }}</h2>
-    <span class="badge bg-primary rounded-pill ms-2">{{ newTotal / 20 | toRating }}</span>
+    <span class="badge bg-primary rounded-pill ms-2">{{ newTotal / 20 | toRating | number: '1.2-2'}}</span>
   </div>
 
   <div class="row mb-4 g-2">
@@ -79,7 +79,7 @@
 <ng-container *ngIf="!loadingRating && topRating">
   <div class="mb-3 d-flex align-items-center">
     <h2 class="mb-0">{{ "ChuniV2.RatingPage.Best" | translate }}</h2>
-    <span class="badge bg-primary rounded-pill ms-2">{{ topTotal / 30 | toRating }}</span>
+    <span class="badge bg-primary rounded-pill ms-2">{{ topTotal / 30 | toRating | number: '1.2-2'}}</span>
   </div>
 
   <div class="row mb-4 g-2">
@@ -92,7 +92,7 @@
 <ng-container *ngIf="!loadingRecent && recentRating">
   <div class="mb-3 d-flex align-items-center">
     <h2 class="mb-0">{{ "ChuniV2.RatingPage.Recent" | translate }}</h2>
-    <span class="badge bg-primary rounded-pill ms-2">{{ recentTotal / 10 | toRating }}</span>
+    <span class="badge bg-primary rounded-pill ms-2">{{ recentTotal / 10 | toRating | number: '1.2-2'}}</span>
   </div>
 
   <div class="row mb-4 g-2">
@@ -116,33 +116,33 @@
           <div class="text-truncate small rating-score">
             <ng-container [ngSwitch]="item.level">
             <span *ngSwitchCase="0" class="difficulty-basic badge rounded-pill">
-              Basic {{ (item.ratingBase|toRating) ?? 'None' }}
+              Basic {{ (item.ratingBase | toRating | number: '1.1-1') ?? 'None' }}
             </span>
               <span *ngSwitchCase="1" class="difficulty-advanced badge rounded-pill">
-              Advanced {{ (item.ratingBase|toRating) ?? 'None' }}
+              Advanced {{ (item.ratingBase | toRating | number: '1.1-1') ?? 'None' }}
             </span>
               <span *ngSwitchCase="2" class="difficulty-expert badge rounded-pill">
-              Expert {{ (item.ratingBase|toRating) ?? 'None' }}
+              Expert {{ (item.ratingBase | toRating | number: '1.1-1') ?? 'None' }}
             </span>
               <span *ngSwitchCase="3" class="difficulty-master badge rounded-pill">
-              Master {{ (item.ratingBase|toRating) ?? 'None' }}
+              Master {{ (item.ratingBase | toRating | number: '1.1-1') ?? 'None' }}
             </span>
               <span *ngSwitchCase="4" class="difficulty-ultima badge rounded-pill text-danger border border-danger">
-              Ultima {{ (item.ratingBase|toRating) ?? 'None' }}
+              Ultima {{ (item.ratingBase | toRating | number: '1.1-1') ?? 'None' }}
             </span>
             </ng-container>
             <b>➛</b>
             <ng-container [ngSwitch]="item.level">
             <span *ngSwitchCase="0"
-                  class="score-value">{{ item.rating|toRating }}</span>
+                  class="score-value">{{ item.rating | toRating | number: '1.2-2'}}</span>
               <span *ngSwitchCase="1"
-                    class="score-value">{{ item.rating|toRating }}</span>
+                    class="score-value">{{ item.rating | toRating | number: '1.2-2'}}</span>
               <span *ngSwitchCase="2"
-                    class="score-value">{{ item.rating|toRating }}</span>
+                    class="score-value">{{ item.rating | toRating | number: '1.2-2'}}</span>
               <span *ngSwitchCase="3"
-                    class="score-value">{{ item.rating|toRating }}</span>
+                    class="score-value">{{ item.rating | toRating | number: '1.2-2'}}</span>
               <span *ngSwitchCase="4"
-                    class="score-value">{{ item.rating|toRating }}</span>
+                    class="score-value">{{ item.rating | toRating | number: '1.2-2'}}</span>
             </ng-container>
           </div>
         </div>
