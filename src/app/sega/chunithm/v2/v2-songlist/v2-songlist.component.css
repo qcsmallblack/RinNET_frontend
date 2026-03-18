@@ -109,3 +109,9 @@ table {
   background: #343636;
   border: 1px solid var(--bs-secondary);
 }
+
+/* 修复 collapse 收起动画不平滑问题 */
+#filterCollapse {
+  overflow: hidden;
+  transition: height 0.25s ease;
+}
