@@ -109,3 +109,8 @@ table {
   background: #343636;
   border: 1px solid var(--bs-secondary);
 }
+
+#filterCollapse {
+  overflow: hidden;
+  transition: height 0.25s ease;
+}
