@@ -1,4 +1,4 @@
-<h1 class="page-heading">Profile</h1>
+<h1 class="page-heading">{{'ChuniV2.ProfilePage.Title' | translate}}</h1>
 <div class="card">
   <div class="card-body">
     <h5 class="card-title mb-3">{{'ChuniV2.ProfilePage.Overview' | translate}}</h5>
@@ -6,66 +6,66 @@
     <table *ngIf="profile" class="table table-striped table-borderless">
       <tbody>
       <tr>
-        <th>Level</th>
+        <th>{{'ChuniV2.ProfilePage.Level' | translate}}</th>
         <td>{{profile.reincarnationNum * 100 + profile.level}}</td>
       </tr>
       <tr>
-        <th>Rating</th>
-        <td>{{profile.playerRating / 100}} (max {{profile.highestRating / 100}})</td>
+        <th>{{'ChuniV2.ProfilePage.Rating' | translate}}</th>
+        <td>{{profile.playerRating / 100}} ({{'ChuniV2.ProfilePage.Max' | translate}} {{profile.highestRating / 100}})</td>
       </tr>
       <tr>
-        <th>Over Power</th>
+        <th>{{'ChuniV2.ProfilePage.OverPower' | translate}}</th>
         <td>{{profile.overPowerPoint / 100}} ({{profile.overPowerRate / 100}}%)</td>
       </tr>
       <tr>
-        <th>Play Count</th>
+        <th>{{'ChuniV2.ProfilePage.PlayCount' | translate}}</th>
         <td>{{profile.playCount}}</td>
       </tr>
       <tr>
-        <th>Last Play</th>
+        <th>{{'ChuniV2.ProfilePage.LastPlay' | translate}}</th>
         <td>{{profile.lastPlayDate}}</td>
       </tr>
       <tr>
-        <th>Current points</th>
+        <th>{{'ChuniV2.ProfilePage.CurrentPoints' | translate}}</th>
         <td>{{profile.point}}</td>
       </tr>
       <tr>
-        <th>Acquired points</th>
+        <th>{{'ChuniV2.ProfilePage.AcquiredPoints' | translate}}</th>
         <td>{{profile.totalPoint}}</td>
       </tr>
       </tbody>
     </table>
-    <p>Looking for more? Some info moved to its respective menus.</p>
+    <p>{{'ChuniV2.ProfilePage.MoreInfo' | translate}}</p>
   </div>
 </div>
 
 <div class="card mt-3">
   <div class="card-body">
-    <h5 class="card-title mb-3">Score Statistics</h5>
+    <h5 class="card-title mb-3">{{'ChuniV2.ProfilePage.ScoreStatistics' | translate}}</h5>
     <table *ngIf="profile" class="table table-striped table-borderless">
       <tbody>
       <tr>
-        <th>Total High Score</th>
+        <th>{{'ChuniV2.ProfilePage.TotalHighScore' | translate}}</th>
         <td>{{profile.totalHiScore}}</td>
       </tr>
       <tr>
-        <th>Total Basic High Score</th>
+        <th>{{'ChuniV2.ProfilePage.TotalBasicHighScore' | translate}}</th>
         <td>{{profile.totalBasicHighScore}}</td>
       </tr>
       <tr>
-        <th>Total Advanced High Score</th>
+        <th>{{'ChuniV2.ProfilePage.TotalAdvancedHighScore' | translate}}</th>
         <td>{{profile.totalAdvancedHighScore}}</td>
       </tr>
       <tr>
-        <th>Total Expert High Score</th>
+        <th>{{'ChuniV2.ProfilePage.TotalExpertHighScore' | translate}}</th>
         <td>{{profile.totalExpertHighScore}}</td>
       </tr>
       <tr>
-        <th>Total Master High Score</th>
+        <th>{{'ChuniV2.ProfilePage.TotalMasterHighScore' | translate}}</th>
         <td>{{profile.totalMasterHighScore}}</td>
       </tr>
       <tr>
-        <th>Total Ultima High Score</th>
+        <th>{{'ChuniV2.ProfilePage.TotalUltimaHighScore' | translate}}</th>
         <td>{{profile.totalUltimaHighScore}}</td>
       </tr>
       </tbody>
