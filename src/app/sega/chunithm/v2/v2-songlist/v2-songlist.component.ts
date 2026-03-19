@@ -133,7 +133,7 @@ export class V2SonglistComponent implements OnInit {
   isDefaultFilter() {
     return this.weControl.value === false &&
     this.genreControls.controls.every(c => c.value === false) &&
-    this.genreControls.controls.every(c => c.value === false) &&
+    this.versionControls.controls.every(c => c.value === false) &&
     this.patternControl.value === '';
   }
 
