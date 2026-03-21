@@ -411,7 +411,24 @@
   },
   "ChuniV2": {
     "ProfilePage": {
-      "Overview": "概览"
+      "Title": "档案",
+      "Overview": "概览",
+      "Level": "等级",
+      "Rating": "评级",
+      "Max": "最高",
+      "OverPower": "完成度",
+      "PlayCount": "游玩次数",
+      "LastPlay": "最后游玩日期",
+      "CurrentPoints": "当前点数",
+      "AcquiredPoints": "已获得点数",
+      "MoreInfo": "想了解更多内容？请前往其他菜单查看详细信息。",
+      "ScoreStatistics": "分数统计",
+      "TotalHighScore": "最高分数总计",
+      "TotalBasicHighScore": "Basic 最高分数总计",
+      "TotalAdvancedHighScore": "Advanced 最高分数总计",
+      "TotalExpertHighScore": "Expert 最高分数总计",
+      "TotalMasterHighScore": "Master 最高分数总计",
+      "TotalUltimaHighScore": "Ultima 最高分数总计"
     },
     "CharacterPage": {
       "Title": "伙伴",

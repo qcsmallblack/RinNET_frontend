@@ -406,7 +406,24 @@
   },
   "ChuniV2": {
     "ProfilePage": {
-      "Overview": "Overview"
+      "Title": "Profile",
+      "Overview": "Overview",
+      "Level": "Level",
+      "Rating": "Rating",
+      "Max": "Max",
+      "OverPower": "Over Power",
+      "PlayCount": "Play Count",
+      "LastPlay": "Last Play",
+      "CurrentPoints": "Current Points",
+      "AcquiredPoints": "Acquired Points",
+      "MoreInfo": "Looking for more? Check other menu sections for more details.",
+      "ScoreStatistics": "Score Statistics",
+      "TotalHighScore": "Total High Score",
+      "TotalBasicHighScore": "Total Basic High Score",
+      "TotalAdvancedHighScore": "Total Advanced High Score",
+      "TotalExpertHighScore": "Total Expert High Score",
+      "TotalMasterHighScore": "Total Master High Score",
+      "TotalUltimaHighScore": "Total Ultima High Score"
     },
     "CharacterPage": {
       "Title": "Character",
